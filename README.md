@@ -28,10 +28,10 @@ However, it is possible to configure the JWT Secret Key, DB Username and Passwor
 ## Diagrams
 
 [Components_Diagram]()
-![[api]Components_Diagram](docs/BCI_Exercise_Components_Diagram.png)
+![[api]Components_Diagram](api/docs/BCI_Exercise_Components_Diagram.png)
 
 [Sequence_Diagram]()
-![[api]Sequence_Diagram](docs/BCI_Exercise_Sequence_Diagram.png)
+![[api]Sequence_Diagram](api/docs/BCI_Exercise_Sequence_Diagram.png)
 
 ## Java 11 features included
 String functions:
