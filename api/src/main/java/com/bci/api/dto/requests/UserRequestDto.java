@@ -20,6 +20,7 @@ public class UserRequestDto extends BaseDto {
     private String name;
     @NotBlank(message = "Email must not be blank")
     @Pattern(regexp = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$", message = "Invalid email format.")
+    @Size(max = 320, message = "Email too long. 320 characters maximum.")
     private String email;
     @NotBlank(message = "Password must not be blank")
     @Size(min = 8, max = 12, message = "Password length must be 8 to 12")

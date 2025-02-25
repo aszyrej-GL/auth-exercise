@@ -8,6 +8,14 @@ This is a simple exercise for a JWT based service using H2 DB to store all data.
 Users are created and assigned a JWT token in the Sign-up method.
 Login acts as a "get user" endpoint and retrieves the information associated to the token present in the request header.
 
+## Documentation
+
+Every endpoint documentation is available in swagger-ui after running the microservice:
+Example running locally:
+http://localhost:8088/swagger-ui/index.html
+
+Token must be sent using Authorize in swagger. 
+
 ## Installation
 
 There's no database needed to run this microservice since it integrates with H2 memory database.

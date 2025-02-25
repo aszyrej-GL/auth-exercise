@@ -34,7 +34,7 @@ public class Token {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @Column(name = "token", length = 320)
+    @Column(name = "token", length = 8000)
     private String value;
 
 }

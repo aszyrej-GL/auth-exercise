@@ -4,6 +4,7 @@ plugins {
 	id 'org.springframework.boot' version '2.5.14'
 	id 'io.spring.dependency-management' version '1.1.7'
 	id "io.freefair.lombok" version "6.5.0"
+	id("org.springdoc.openapi-gradle-plugin") version "1.6.0"
 }
 
 group = 'com.bci'
@@ -21,6 +22,9 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//Swagger
+	implementation "org.springdoc:springdoc-openapi-ui:1.8.0"
 
 	//Tests
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -57,3 +61,9 @@ def exclusionList = [
 		"**/repository**",
 		"**/resources**"
 ]
+
+openApi {
+	outputDir.set(file("$projectDir/docs"))
+	outputFileName.set("swagger.json")
+	waitTimeInSeconds.set(10)
+}

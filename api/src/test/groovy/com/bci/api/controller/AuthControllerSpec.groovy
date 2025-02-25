@@ -48,7 +48,7 @@ class AuthControllerSpec extends Specification {
 
         then: "User is created and JWT is returned with 200 OK"
         1 * this.authService.createUser(validUserRequestDto)
-        response.getStatusCode() == HttpStatus.OK
+        response.getStatusCode() == HttpStatus.CREATED
     }
 
     def "Login finishes OK"() {
